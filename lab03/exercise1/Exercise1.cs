@@ -7,32 +7,27 @@ namespace lab03.exercise1
     {
         public static void Main(string[] args)
         {
-            Atom atom = new Atom();
-            while (true)
+            var atoms = new Atom[10];
+            Console.WriteLine("Atomic Information");
+            Console.WriteLine("==================");
+            var count = 0;
+            for (int i = 0; i < 10; i++)
             {
-                Console.OutputEncoding = Encoding.Unicode;
-                Console.WriteLine("Chọn 1 để thêm mới");
-                Console.WriteLine("Chọn 2 để hiển thị");
-                Console.WriteLine("Chọn 3 để thoát");
-                Console.WriteLine("Vui lòng nhập lựa chọn của bạn(1-3):");
-                var choice = int.Parse(Console.ReadLine());
-                switch (choice)
+                var atom = new Atom();
+                var result = atom.Accept();
+                if (!result || atom.Number == 0)
                 {
-                    case 1:
-                        atom.Accept();
-                        break;
-                    case 2:
-                        atom.Display();
-                        break;
-                    case 3:
-                        break;
-                }
-        
-                if (choice == 3)
-                {
-                    Console.WriteLine("Thoát chương trình.");
                     break;
                 }
+                atoms[i] = atom;
+                count++;
+            }
+
+            Console.WriteLine("No Sym Name Weight");
+            Console.WriteLine("------------------------------------");
+            for (int i = 0; i < count; i++)
+            {
+                atoms[i].Display();
             }
         }
     }
