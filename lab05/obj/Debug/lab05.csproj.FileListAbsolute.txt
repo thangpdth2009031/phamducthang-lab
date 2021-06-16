@@ -1,0 +1,6 @@
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\bin\Debug\lab05.exe
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\bin\Debug\lab05.pdb
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\obj\Debug\lab05.csprojAssemblyReference.cache
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\obj\Debug\lab05.csproj.CoreCompileInputs.cache
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\obj\Debug\lab05.exe
+C:\Users\Pham Thang\RiderProjects\DuongSinhCSharp\lab05\obj\Debug\lab05.pdb
