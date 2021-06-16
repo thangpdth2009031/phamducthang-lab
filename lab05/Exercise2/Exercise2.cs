@@ -35,15 +35,15 @@ namespace lab05.Exercise2
         {
             if (seniorLecture.Salary < 60000)
             {
-                throw new AmountException($"mức lương của giảng viên {seniorLecture.Name} tối thiểu phải từ 60000");
+                throw new AmountException($"Mức lương của giảng viên {seniorLecture.Name} tối thiểu phải từ 60000");
             }
             else if(seniorLecture.Bonus > 10000)
             {
-                throw new AmountException($"mức thưởng của giảng viên {seniorLecture.Name} tối đa không quá 10000");
+                throw new AmountException($"Mức thưởng của giảng viên {seniorLecture.Name} tối đa không quá 10000");
             }
             else
             {
-                Console.WriteLine("Okie");
+                Console.WriteLine("Thành công.");
             }
 
         }
